@@ -5,7 +5,6 @@
 }
 
 body{
-
     height: 200vh;
 }
 /*header start*/
@@ -46,6 +45,7 @@ nav .nav_left h1{
 nav .nav_right{
     /* border: 1px solid; */
     transition: .4s ease;
+  
     
 }
 
@@ -53,7 +53,7 @@ nav .nav_right ul{
     list-style: none;
     display: flex;
     
-    align-items: center;
+   
 }
 
 nav .nav_right ul li{
@@ -99,6 +99,11 @@ nav .nav_right  #hamburger-menu{
     display: none;
     border: none;
     font-size: 20px;
+}
+
+
+nav .nav-right ul button{
+    display: flex;
 }
 
 /*header end*/
@@ -150,6 +155,15 @@ main .introduction .introduction_texts button{
     background-color: rgba(0, 0, 0, 0);
     color: white;
     border: 3px solid white;
+    transition: .5s;
+}
+
+
+main .introduction .introduction_texts button:hover{
+    background-color: #5fcf80;
+    color: white;
+    cursor: pointer;
+    border: 1px solid #5fcf80;
 }
 /*introduction end*/
 
@@ -250,10 +264,120 @@ main .counts div p{
     font-size: 15px;
     font-family: Open Sans;
     font-weight: 700;
+}
+/*counts end*/
+
+/*why_choose_mentor start*/
+
+.why_choose_mentor{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 0 50px;
+}
+.why_choose_mentor .row .row_left{
+    width: 28%;
+    height: auto;
+    border: 1px solid #5fcf80;
+    background-color: #5fcf80;
+    padding: 20px 25px;
+    border-radius: 7px;
 
 }
 
-/*counts end*/
+
+.why_choose_mentor .row .row_left .row_left_texts h1{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.why_choose_mentor .row .row_left .row_left_texts p{
+    color: white;
+    text-align: left;
+    font-size: 15px;
+}
+
+.why_choose_mentor .row .row_left .row_left_texts button{
+    width: 45%;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+.why_choose_mentor .row .row_left .row_left_texts button:hover{
+    background-color: white;
+    color: #5fcf80;
+    cursor: pointer;
+    
+}
+
+.why_choose_mentor .row .row_left .row_left_texts .row_left_button{
+    text-align: center;
+}
+.why_choose_mentor .row .row_right{
+    display: flex;
+    width: 70% ;
+    height: 400px;
+    /* border: 3px solid aqua; */
+}
+
+.why_choose_mentor .row .row_right .row_right_card{
+    width: 27%;
+    height: 400px;
+    /* border: 2px solid sienna; */
+}
+
+.why_choose_mentor .row .row_right{
+    display: flex;
+    justify-content: space-around;
+}
+
+.why_choose_mentor .row .row_right .row_right_card{
+    text-align: center;
+} 
+
+.why_choose_mentor .row .row_right .row_right_card .row_right_card_img{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ecf9f0;
+    border-radius: 50%;
+    margin: 40px auto;
+    background-color: #ecf9f0;
+    
+}
+
+.why_choose_mentor .row .row_right .row_right_card .row_right_card_img img{
+   margin-top: 20px;
+}
+
+.why_choose_mentor .row .row_right .row_right_card .row_right_card_texts h3{
+    font-weight: bold;
+
+}
+
+.why_choose_mentor .row .row_right .row_right_card .row_right_card_texts p{
+    font-weight: bold;
+    color: #848484;
+    padding-top: 20px;
+
+}
+
+
+/* .why_choose_mentor .row .row_left,.why_choose_mentor .row .row_right{
+    display: flex;
+    justify-content: space-between;
+} */
+
+/*why_choose_mentor end*/
+
+
 
 /*header*/
 @media(max-width:1210px){
@@ -263,6 +387,14 @@ main .counts div p{
 
     nav .nav_right  #hamburger-menu{
         display: block;
+    }
+
+    nav .nav_right  button{
+        display: block;
+
+    }
+    nav{
+        padding: 20px 0;
     }
 }
 
@@ -313,6 +445,59 @@ main .counts div p{
 /*counts*/
 @media(max-width:989px){
     main .counts div{
-        width: 50%;
+        width: 40%;
+    }
+}
+
+
+/*why_choose_mentor*/
+@media (max-width:1192px){
+    .why_choose_mentor .row .row_right .col-4{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+        height: 130px;
+        font-size: 10px;
+        padding: 0;
+      
+        
+    }
+
+    .why_choose_mentor .row .row_right .col-4 .row_right_card_img {
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .why_choose_mentor .row .row_right .col-4 .row_right_card_img img{
+        width: 30px;
+        height: 30px;
+        margin-top: 0;
+    }
+
+    .why_choose_mentor .row .row_right .col-4 .row_right_card .row_right_card{
+        line-height: 0;
+    } 
+    .why_choose_mentor .row .row_left, .why_choose_mentor .row .row_right{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:940px){
+    .why_choose_mentor .row{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .why_choose_mentor .row .row_right{
+        width: 100%;
+    }
+
+    .why_choose_mentor .row .row_left{
+       width: 100%;
     }
 }

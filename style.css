@@ -243,7 +243,7 @@ main .counts {
     flex-wrap: wrap;   
 }
 main .counts div{
-    
+    border: 1px solid #f6f7f6;
     width:25% ;
     /* border: 3px solid violet; */
     text-align: center;
@@ -378,6 +378,52 @@ main .counts div p{
 /*why_choose_mentor end*/
 
 
+/*boxes start*/
+main .boxes{
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0 50px;
+    margin-top: 60px;
+}
+
+main .boxes .box_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+
+    flex-wrap: wrap;
+    
+}
+
+
+main .boxes .box_item{
+    width: 24%;
+    border: 1px solid #eef0ef;
+    height: 80px;
+    margin-bottom: 20px; 
+    display: flex;  
+    justify-content: start;
+    align-items: center;
+    
+}
+
+main .boxes .box_item img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+main .boxes .box_item span{
+    color: 37423b;
+    font-weight: 800;
+}
+
+/* boxes end */
+
 
 /*header*/
 @media(max-width:1210px){
@@ -443,11 +489,13 @@ main .counts div p{
 }
 
 /*counts*/
-@media(max-width:989px){
+@media(max-width:980px){
     main .counts div{
-        width: 40%;
+        width: 50%;
     }
 }
+
+
 
 
 /*why_choose_mentor*/
@@ -499,5 +547,23 @@ main .counts div p{
 
     .why_choose_mentor .row .row_left{
        width: 100%;
+    }
+}
+
+
+/* boxes */
+@media(max-width:956px){
+    main .boxes .box_container .col-3{
+        width: 30%;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media(max-width:756px){
+    main .boxes .box_container .col-3{
+        width: 100%;
+        align-items: center;
+        text-align: center;
     }
 }

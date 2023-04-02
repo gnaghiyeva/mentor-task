@@ -578,76 +578,104 @@ main .popular_courses .courses_container .card .card_bottom .card_bottom_image{
 /* popular_courses end */
 
 
-/* trainer start */
 
-main .trainer{
+
+/* trainers start */
+main .trainers {
+    margin-top: 80px;
+    padding: 0 30px;
     width: 100%;
-    height: 600px;
-    /* border: 4px solid black; */
-    margin-top: 100px;
-    display: flex;
+    
+    /* border: 3px solid black; */
 }
 
-main .trainer .trainers_container{
-    display: flex;
+main .trainers .trainers_container{
     width: 100%;
-    height: 100%;
-    /* border: 4px solid aqua; */
-    padding: 0 50px;
+    /* height: 600px; */
+    /* border: 3px solid rgb(255, 55, 55); */
+
+    display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
-main .trainer .trainers_container .cart_trainer{
+
+main .trainers .trainers_container .card{
     width: 30%;
     height: 600px;
-    /* border: 3px solid greenyellow; */
+    /* border: 3px solid rgb(55, 255, 125); */
+    border: 1px solid #eef0ef;
+    flex-wrap: wrap;
+
 }
 
-main .trainer .trainers_container .cart_trainer .cart_trainer_body .cart_body_texts{
-    text-align: center;
-    padding: 0 6px;
+main .trainers .trainers_container .card .card_image{
+    width: 100%;
+  
+    /* border: 3px solid rgb(55, 122, 255); */
+}
+
+main .trainers .trainers_container .card .card_image img{
+    width: 100%;   
+}
+
+main .trainers .trainers_container .card .card_body{
+    width: 100%;
+    /* border: 3px solid rgb(55, 122, 255); */
+    padding:10px 20px;
+    line-height: 1.3em;
    
 }
 
-main .trainer .trainers_container .cart_trainer .cart_trainer_body .cart_body_texts p{
-    color: #aaaaaa; 
-    font-size: 14px;
-    line-height: 1.2em;
-    font-style: italic;
 
+
+main .trainers .trainers_container .card .card_body .card_body_texts{
+    /* margin-top: 10px; */
+    text-align: center;
+    line-height: 1.5em;
 }
 
-main .trainer .trainers_container .cart_trainer .cart_trainer_body .cart_body_texts h4{
+main .trainers .trainers_container .card .card_body .card_body_texts h3{
+    font-weight: 800;
     font-size: 18px;
-    font-weight: 700;
+}
+main .trainers .trainers_container .card .card_body .card_body_texts i{
+    font-size: 13px;
+}
+
+main .trainers .trainers_container .card .card_body .card_body_texts p{
+    font-size: 13px;
+    font-style: italic;
+    color: #aaaaaa;
     
 }
 
-main .trainer .trainers_container .cart_trainer .cart_trainer_body .cart_body_texts span{
-    font-size: 13px;
-    font-style: italic;
-    line-height: 1.2em;
-}
 
-
-main .trainer .trainers_container .cart_trainer .card_trainer_image img{
-    width: 100%;
-}
-
-main .trainer .trainers_container .cart_trainer .cart_trainer_bottom{
-    margin-top: 20px;
-   width: 100%;  
-}
-
-main .trainer .trainers_container .cart_trainer .cart_trainer_bottom .cart_bottom-icons{
+main .trainers .trainers_container .card .card_bottom .card_bottom-icons{
+    color: #657a6d ;
     display: flex;
-    justify-content: center;   
+    justify-content: center;
     gap: 10px;
-
 }
-/* trailer end */
+
+main .trainers .trainers_container .card .card_bottom{   
+    width: 100%;
+    height: 15%;
+    /* border: 3px solid rgb(55, 122, 255); */
+}
+
+/* trainers end */
+
+/* footer start */
+footer .row{
+    width: 100%;
+    height: 300px;
+    border: 3px solid hotpink;
+    display: flex;
+    justify-content: spa;
+}
 
 
+
+/* footer end */
 
 
 
@@ -848,26 +876,40 @@ main .trainer .trainers_container .cart_trainer .cart_trainer_bottom .cart_botto
 
 
 /* trainers */
-@media(max-width:986px){
-
-    main .trainer .trainers_container{
+@media (max-width:984px){
+    main .trainers .trainers_container{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: start;
-        gap: 20px;
+      
+        
     }
-
-    main .trainer .trainers_container .cart_trainer.col-4{
-        width: 45%;     
+    main .trainers .trainers_container .col-4{
+        width: 46%;
+        height: 100%;
+        margin-right: 20px;
+        margin-top: 20px;
+        
     }
-
-  
 }
 
-@media (max-width:733px){
-    main .trainer .trainers_container .cart_trainer.col-4.col-4{
-        width: 100%;       
+
+@media (max-width:725px){
+    main .trainers .trainers_container{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
         justify-content: center;
+       
+
+    }
+
+    main .trainers .trainers_container .col-4{
+        margin: 20px 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        
     }
 }
